@@ -22,35 +22,35 @@ Partial Class FormConverter
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtKilometres = New System.Windows.Forms.TextBox()
+        Me.txtMiles = New System.Windows.Forms.TextBox()
+        Me.btnConvert = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtKilometres
         '
-        Me.TextBox1.Location = New System.Drawing.Point(479, 226)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(249, 26)
-        Me.TextBox1.TabIndex = 0
+        Me.txtKilometres.Location = New System.Drawing.Point(479, 226)
+        Me.txtKilometres.Name = "txtKilometres"
+        Me.txtKilometres.Size = New System.Drawing.Size(249, 26)
+        Me.txtKilometres.TabIndex = 0
         '
-        'TextBox2
+        'txtMiles
         '
-        Me.TextBox2.Location = New System.Drawing.Point(479, 297)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(249, 26)
-        Me.TextBox2.TabIndex = 1
+        Me.txtMiles.Location = New System.Drawing.Point(479, 297)
+        Me.txtMiles.Name = "txtMiles"
+        Me.txtMiles.Size = New System.Drawing.Size(249, 26)
+        Me.txtMiles.TabIndex = 1
         '
-        'Button1
+        'btnConvert
         '
-        Me.Button1.Location = New System.Drawing.Point(479, 258)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(249, 33)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Teisenda"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConvert.Location = New System.Drawing.Point(479, 258)
+        Me.btnConvert.Name = "btnConvert"
+        Me.btnConvert.Size = New System.Drawing.Size(249, 33)
+        Me.btnConvert.TabIndex = 2
+        Me.btnConvert.Text = "Teisenda"
+        Me.btnConvert.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -77,9 +77,9 @@ Partial Class FormConverter
         Me.ClientSize = New System.Drawing.Size(1181, 574)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnConvert)
+        Me.Controls.Add(Me.txtMiles)
+        Me.Controls.Add(Me.txtKilometres)
         Me.Name = "FormConverter"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -87,9 +87,9 @@ Partial Class FormConverter
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtKilometres As TextBox
+    Friend WithEvents txtMiles As TextBox
+    Friend WithEvents btnConvert As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
 End Class
