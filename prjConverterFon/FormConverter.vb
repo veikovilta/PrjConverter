@@ -25,7 +25,8 @@
     End Sub
 
     Private Sub lblClock_Click(sender As Object, e As EventArgs) Handles lblClock.Click
-
+        TimerClock.Enabled = Not TimerClock.Enabled
+        lblClock.Text = "Meow"
     End Sub
 
     Private Sub TimerClock_Tick(sender As Object, e As EventArgs) Handles TimerClock.Tick
