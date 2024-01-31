@@ -38,6 +38,7 @@ Partial Class FormConverter
         '
         'txtMiles
         '
+        Me.txtMiles.Enabled = False
         Me.txtMiles.Location = New System.Drawing.Point(479, 297)
         Me.txtMiles.Name = "txtMiles"
         Me.txtMiles.Size = New System.Drawing.Size(249, 26)
@@ -81,7 +82,7 @@ Partial Class FormConverter
         Me.Controls.Add(Me.txtMiles)
         Me.Controls.Add(Me.txtKilometres)
         Me.Name = "FormConverter"
-        Me.Text = "Form1"
+        Me.Text = "Distantsi teisendaja "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

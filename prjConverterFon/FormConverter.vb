@@ -5,7 +5,8 @@
         Try
             txtMiles.Text = txtKilometres.Text / KM2MI
         Catch ex As Exception
-            MsgBox("Tekkis viga!", MsgBoxStyle.Critical, "Kõik on katki")
+            'MsgBox("Tekkis viga!", MsgBoxStyle.Critical, "Kõik on katki")
+            txtMiles.Text = "Tekkis viga"
         End Try
     End Sub
 
