@@ -22,11 +22,18 @@ Partial Class FormConverter
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.txtKilometres = New System.Windows.Forms.TextBox()
         Me.txtMiles = New System.Windows.Forms.TextBox()
         Me.btnConvert = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MenüüToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SulgeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TimerClock = New System.Windows.Forms.Timer(Me.components)
+        Me.lblClock = New System.Windows.Forms.Label()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'txtKilometres
@@ -71,18 +78,56 @@ Partial Class FormConverter
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Vastus miilides"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenüüToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1181, 33)
+        Me.MenuStrip1.TabIndex = 5
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'MenüüToolStripMenuItem
+        '
+        Me.MenüüToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SulgeToolStripMenuItem})
+        Me.MenüüToolStripMenuItem.Name = "MenüüToolStripMenuItem"
+        Me.MenüüToolStripMenuItem.Size = New System.Drawing.Size(83, 32)
+        Me.MenüüToolStripMenuItem.Text = "Menüü"
+        '
+        'SulgeToolStripMenuItem
+        '
+        Me.SulgeToolStripMenuItem.Name = "SulgeToolStripMenuItem"
+        Me.SulgeToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.SulgeToolStripMenuItem.Text = "sulge"
+        '
+        'lblClock
+        '
+        Me.lblClock.AutoSize = True
+        Me.lblClock.Location = New System.Drawing.Point(565, 476)
+        Me.lblClock.Name = "lblClock"
+        Me.lblClock.Size = New System.Drawing.Size(34, 20)
+        Me.lblClock.TabIndex = 6
+        Me.lblClock.Text = "Kell"
+        '
         'FormConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1181, 574)
+        Me.Controls.Add(Me.lblClock)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.txtMiles)
         Me.Controls.Add(Me.txtKilometres)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormConverter"
         Me.Text = "Distantsi teisendaja "
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -93,4 +138,9 @@ Partial Class FormConverter
     Friend WithEvents btnConvert As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents MenüüToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SulgeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TimerClock As Timer
+    Friend WithEvents lblClock As Label
 End Class

@@ -15,6 +15,20 @@
     End Sub
 
     Private Sub FormConverter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TimerClock.Interval = 1000
+        TimerClock.Enabled = True
 
+    End Sub
+
+    Private Sub SulgeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SulgeToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub lblClock_Click(sender As Object, e As EventArgs) Handles lblClock.Click
+
+    End Sub
+
+    Private Sub TimerClock_Tick(sender As Object, e As EventArgs) Handles TimerClock.Tick
+        lblClock.Text = DateTime.Now
     End Sub
 End Class
