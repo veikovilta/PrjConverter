@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.prjConverterFon.Form1
+            Me.MainForm = Global.prjConverterFon.FormConverter
         End Sub
     End Class
 End Namespace
