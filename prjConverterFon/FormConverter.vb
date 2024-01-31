@@ -3,7 +3,13 @@
     Const KM2MI = 1.609344
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnConvert.Click
         Try
-            txtMiles.Text = txtKilometres.Text / KM2MI
+            'xtMiles.Text = txtKilometres.Text / KM2MI
+            Dim converter As converterComponent.Iconverter
+            converter = New converterComponent.CConverter
+
+            txtMiles.Text = converter.ConvertKilometersToMiles(txtKilometres.Text)
+
+
         Catch ex As Exception
             'MsgBox("Tekkis viga!", MsgBoxStyle.Critical, "Kõik on katki")
             txtMiles.Text = "Tekkis viga"
